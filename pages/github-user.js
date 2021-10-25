@@ -99,7 +99,7 @@ export default function GithubUser({ usrData }) {
   return (
     <div className="flex flex-col items-center min-h-screen py-2">
       <Head>
-        <title>Github Cards</title>
+        <title>GitHub Cards</title>
       </Head>
 
       <svg
@@ -180,7 +180,9 @@ export default function GithubUser({ usrData }) {
         >
           {userData?.avatar_url && (
             <div
-              className={`${backgroundColor()} ${theme === "dark" && "border"} group flex flex-col justify-center items-center w-3/4 rounded-lg relative`}
+              className={`${backgroundColor()} ${
+                theme === "dark" && "border"
+              } group flex flex-col justify-center items-center w-3/4 rounded-lg relative`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

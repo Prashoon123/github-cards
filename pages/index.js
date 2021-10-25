@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Github Cards</title>
+        <title>GitHub Cards</title>
         <link rel="icon" href="/github.png" />
         <meta
           name="description"
@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@prashoonb" />
         <meta name="twitter:creator" content="@prashoonb" />
-        <meta property="og:title" content="Social Banner" />
+        <meta property="og:title" content="GitHub Cards" />
         <meta
           property="og:description"
           content="Create beautiful-looking cards for your GitHub profile or GitHub repo!"
@@ -23,24 +23,24 @@ export default function Home() {
         <meta property="og:url" content="https://www.github-cards.ml/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/github.png" />
-        <meta property="og:image:alt" content="Social Banner" />
+        <meta property="og:image:alt" content="GitHub Cards" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
-        <meta property="og:site_name" content="Github Cards" />
+        <meta property="og:site_name" content="GitHub Cards" />
         <link rel="canonical" href="https://www.github-cards.ml/" />
         <script async defer src="https://buttons.github.io/buttons.js"></script>
       </Head>
 
       <header className="border-b w-screen flex flex-col justify-center items-center h-auto p-4">
-        <h1 className="text-4xl font-bold mb-4">Github Cards</h1>
+        <h1 className="text-4xl font-bold mb-4">GitHub Cards</h1>
         <a
           className="github-button"
-          href="https://github.com/Prashoon123/social-banner"
+          href="https://github.com/Prashoon123/github-cards"
           data-color-scheme="no-preference: dark; light: dark; dark: dark;"
           data-icon="octicon-star"
           data-size="large"
           data-show-count="true"
-          aria-label="Star Prashoon123/social-banner on GitHub"
+          aria-label="Star Prashoon123/github-cards on GitHub"
         >
           Star on GitHub
         </a>
@@ -78,7 +78,7 @@ export default function Home() {
           </a>
         </p>
 
-        <a
+        {/* <a
           className="absolute right-0 mr-[10px] hidden lg:inline"
           href="https://www.producthunt.com/posts/social-banner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-social-banner"
           target="_blank"
@@ -91,7 +91,7 @@ export default function Home() {
             width="250"
             height="54"
           />
-        </a>
+        </a> */}
       </footer>
     </div>
   );

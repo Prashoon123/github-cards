@@ -6,9 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
+    "html-to-image": "^1.9.0",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.1.1",
+    "react-twitter-widgets": "^1.10.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

@@ -1,82 +1,98 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { Follow } from "react-twitter-widgets";
+import Option from "../components/Option";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Github Cards</title>
+        <link rel="icon" href="/github.png" />
+        <meta
+          name="description"
+          content="Create beautiful-looking cards for your GitHub profile or GitHub repo!"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@prashoonb" />
+        <meta name="twitter:creator" content="@prashoonb" />
+        <meta property="og:title" content="Social Banner" />
+        <meta
+          property="og:description"
+          content="Create beautiful-looking cards for your GitHub profile or GitHub repo!"
+        />
+        <meta property="og:url" content="https://www.github-cards.ml/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/github.png" />
+        <meta property="og:image:alt" content="Social Banner" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:site_name" content="Github Cards" />
+        <link rel="canonical" href="https://www.github-cards.ml/" />
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
       </Head>
 
+      <header className="border-b w-screen flex flex-col justify-center items-center h-auto p-4">
+        <h1 className="text-4xl font-bold mb-4">Github Cards</h1>
+        <a
+          className="github-button"
+          href="https://github.com/Prashoon123/social-banner"
+          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+          data-icon="octicon-star"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star Prashoon123/social-banner on GitHub"
+        >
+          Star on GitHub
+        </a>
+      </header>
+
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="flex flex-row flex-wrap justify-center">
+          <Option
+            name="GitHub User"
+            desc="Generate a card for your GitHub profile!"
+            navigation="github-user"
+          />
+          <Option
+            name="GitHub Repo"
+            desc="Generate a card for your GitHub repo!"
+            navigation="github-repo"
+          />
         </div>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
+        <div className="absolute left-0 ml-[10px] hidden lg:inline">
+          <Follow username="prashoonb" options={{ size: "large" }} />
+        </div>
+
+        <p>
+          Made with 💖 by{" "}
+          <a
+            href="https://prashoonb.tech/"
+            className="underline"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Prashoon Bhattacharjee
+          </a>
+        </p>
+
         <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          className="absolute right-0 mr-[10px] hidden lg:inline"
+          href="https://www.producthunt.com/posts/social-banner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-social-banner"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316742&theme=dark"
+            alt="Password Generator - Generate random passwords with just a few clicks | Product Hunt"
+            style={{ width: 250, height: 54 }}
+            width="250"
+            height="54"
+          />
         </a>
       </footer>
     </div>
-  )
+  );
 }

@@ -149,7 +149,7 @@ export default function GithubRepo({ repositoryData }) {
 
           <select
             id="cardTheme"
-            className="border outline-none p-2 rounded-md bg-transparent border-gray-600 focus:border-gray-800 text-white"
+            className="border outline-none p-2 rounded-md bg-transparent border-gray-600 focus:border-gray-800 text-white cursor-pointer"
             value={theme}
             onChange={(e) => setTheme(e.target.value)}
           >

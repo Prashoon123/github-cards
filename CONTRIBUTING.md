@@ -1,4 +1,4 @@
-## Contributing to Social Banner
+## Contributing to GitHub Cards
 
 We are going to create a pr. You need to know basic git and github commands to make a pr. If you don't know about it, check out Avneesh's [Git and Github crash course](https://avneesh0612.hashnode.dev/git-and-github-crash-course "Git and Github crash course")
 

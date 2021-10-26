@@ -10,7 +10,8 @@
   <a href="https://www.producthunt.com/posts/social-banner?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-social-banner" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316742&theme=dark" alt="Social Banner - Generate banners for your social media accounts | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 </p>
 
-> Create beautiful-looking cards for your GitHub profile or GitHub repo!
+> Create beautiful-looking cards for your GitHub profile or GitHub repo! <br />
+
 > ⚠️ Doesn't work on private repositories.
 
 ### 🏠 [Homepage](https://www.github-cards.ml/)

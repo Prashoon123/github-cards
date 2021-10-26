@@ -107,6 +107,7 @@ export default function GithubRepo({ repositoryData }) {
     <div className="flex flex-col items-center min-h-screen py-2">
       <Head>
         <title>GitHub Cards</title>
+        <link rel="icon" href="/github.png" />
       </Head>
 
       <svg

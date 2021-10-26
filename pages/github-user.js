@@ -12,6 +12,7 @@ export default function GithubUser({ usrData }) {
   const [userData, setUserData] = useState(usrData);
   const [theme, setTheme] = useState("light");
   const [downloading, setDownloading] = useState(false);
+  const [borderColor, setBorderColor] = useState("border-black");
 
   const createCard = async () => {
     if (!username || username[0] === "")
@@ -94,8 +95,6 @@ export default function GithubUser({ usrData }) {
     }
   };
 
-  const borderColor = `border-${color().split("-")[1]}`;
-
   return (
     <div className="flex flex-col items-center min-h-screen py-2">
       <Head>
@@ -145,7 +144,30 @@ export default function GithubUser({ usrData }) {
             id="cardTheme"
             className="border outline-none p-2 rounded-md bg-transparent border-gray-600 focus:border-gray-800 cursor-pointer"
             value={theme}
-            onChange={(e) => setTheme(e.target.value)}
+            onChange={(e) => {
+              setTheme(e.target.value);
+
+              switch (e.target.value) {
+                case "light":
+                  setBorderColor("border-black");
+                  break;
+                case "dark":
+                  setBorderColor("border-white");
+                  break;
+                case "dim":
+                  setBorderColor("border-white");
+                  break;
+                case "water":
+                  setBorderColor("border-black");
+                  break;
+                case "fire":
+                  setBorderColor("border-black");
+                  break;
+                case "rose":
+                  setBorderColor("border-black");
+                  break;
+              }
+            }}
           >
             <option value="light" className="text-black">
               Light

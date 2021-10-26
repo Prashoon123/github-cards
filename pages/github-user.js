@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/dist/shared/lib/head";
-import Image from "next/image";
 import { toast, Toaster } from "react-hot-toast";
 import * as htmlToImage from "html-to-image";
 import FileSaver from "file-saver";
@@ -241,11 +240,9 @@ export default function GithubUser({ usrData }) {
               <div
                 className={`flex flex-col justify-center items-center w-full p-10 ${borderColor} border-b`}
               >
-                <Image
+                <img
                   src={userData?.avatar_url}
                   alt="user-avatar"
-                  height={60}
-                  width={60}
                   className="h-[60px] w-[60px] rounded-full object-contain"
                 />
 

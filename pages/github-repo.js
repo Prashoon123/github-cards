@@ -80,7 +80,7 @@ export default function GithubRepo({ repositoryData }) {
 
       navigator.clipboard.write(clipboardItem);
 
-      FileSaver.saveAs(blob, "github-user.png");
+      FileSaver.saveAs(blob, "github-repo.png");
 
       setDownloading(false);
     });
@@ -205,7 +205,7 @@ export default function GithubRepo({ repositoryData }) {
           id="card"
           className="w-full flex justify-center items-center bg-transparent h-auto p-10"
         >
-          {repoData?.name && (
+          {repoData?.owner?.avatar_url && (
             <div
               className={`${backgroundColor()} ${
                 theme === "dark" && "border"
@@ -245,6 +245,12 @@ export default function GithubRepo({ repositoryData }) {
               <div
                 className={`flex flex-col justify-center items-center w-full p-10 ${borderColor} border-b`}
               >
+                <img
+                  src={repoData?.owner?.avatar_url}
+                  alt="owner-avatar"
+                  className="h-[60px] w-[60px] rounded-full object-contain"
+                />
+
                 <h2 className={`${color()} text-2xl font-semibold mt-2`}>
                   {repoData?.name}
                 </h2>
